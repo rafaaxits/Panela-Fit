@@ -52,9 +52,9 @@ public class RepositorioMateriaPrima {
 	
 	public boolean removerMateriaPrima(int codigo) {
 		boolean igual = false;
-		for(MateriaPrima materiap : listaMateriasPrimas) {
-			if(materiap.getCodigo() == codigo) {
-				listaMateriasPrimas.remove(materiap);
+		for (int i = 0; i < listaMateriasPrimas.size(); i++){
+			if(listaMateriasPrimas.get(i).getCodigo() == codigo){
+				listaMateriasPrimas.remove(i);
 				igual = true;
 			}
 		}
