@@ -32,8 +32,15 @@ public class Cliente extends Pessoa{
 
 	@Override
 	public String toString() {
-		return "Cliente [codigo=" + codigo + "]";
+		return "Cliente [codigo=" + codigo + ", nome=" +this.getNome()+ ", cpf=" +this.getCpf()+ ", idade=" +this.getIdade()+ ", endereco=" +this.getEndereco()+ ", telefone=" +this.getTelefone()+ "]";
 	}
+	
+	
+
+
+	
+
+
 	
 	
 }

@@ -3,6 +3,7 @@ package Objects;
 public class Funcionario extends Pessoa {
 	private int nivel;
 	private int codigo;
+
 	
 	public Funcionario(int nivel, int codigo){
 		super();
@@ -42,7 +43,7 @@ public class Funcionario extends Pessoa {
 
 	@Override
 	public String toString() {
-		return "Funcionario [nivel=" + nivel + ", codigo=" + codigo + "]";
+		return "Funcionario [nivel=" + nivel + ", codigo=" + codigo + ", nome=" +this.getNome()+ ", cpf=" +this.getCpf()+ ", idade=" +this.getIdade()+ ", endereco=" +this.getEndereco()+ ", telefone=" +this.getTelefone()+ "]";
 	}
 	
 	
