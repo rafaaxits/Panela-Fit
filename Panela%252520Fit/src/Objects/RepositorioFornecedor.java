@@ -51,9 +51,9 @@ public class RepositorioFornecedor {
 	
 	public boolean removerFornecedor(int codigo) {
 		boolean igual = false;
-		for(Fornecedor fornecedor : listaFornecedores) {
-			if(fornecedor.getCodigo() == codigo) {
-				listaFornecedores.remove(fornecedor);
+		for (int i = 0; i < listaFornecedores.size(); i++){
+			if(listaFornecedores.get(i).getCodigo() == codigo){
+				listaFornecedores.remove(i);
 				igual = true;
 			}
 		}
